@@ -1,0 +1,290 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 98vw;
+    background-color: black;
+}
+
+.container {
+    width: 98%;
+    min-height: 850px;
+    margin: 0 20px 0 20px;
+    background-color: rgba(101, 99, 99, 0.367);
+    display: flex;
+    position: relative;
+}
+.container:hover #navbar {
+    top: 0;
+}
+.nav {
+    position: fixed;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    color: white;
+    background-color: rgb(59, 58, 58);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.nav:hover {
+    opacity: 1;
+}
+.nav1 {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+.navp {
+    padding: 10px;
+}
+.navp:hover {
+    z-index: 1;
+    background-color: black;
+}
+
+.nav1 img {
+    width: 30px;
+    height: 20px;
+}
+.nav3 {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+.nav3btn {
+    padding: 6px 10px ;
+    background-color: rgb(3, 171, 238);
+    border-radius: 5px;
+    color: white;
+}
+.select {
+    margin: 6px 20px;
+    color: white;
+    border: none;
+    background-color: rgb(59, 58, 58);
+}
+.createpage, .loginpage {
+    position: absolute;
+    top: 100px;
+    left: 460px;
+    z-index: 10;
+    text-align: center;
+    background-color: rgb(59, 58, 58);
+    border-radius: 10px;
+    width: 420px;
+    max-height: 600px;
+    overflow-y: scroll;
+    display: none;
+}
+
+.createpage::-webkit-scrollbar , .loginpage::-webkit-scrollbar {
+    display: none;
+}
+.signup {
+    color: white;
+    position: relative;
+}
+.signp {
+    text-align: end;
+    padding: 10px;
+}
+.signh1 {
+    margin: 10px 0;
+}
+.signbtn, .signinput, .passwordinput {
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color: rgb(57, 54, 54);
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    width: 82%;
+}
+.signbtn i {
+    padding: 0 15px;
+}
+.checkbox {
+    margin: 15px;
+}
+.signp1 {
+    font-size: 0.75rem;
+     margin: 10px 28px;
+}
+.signp1 a , .link {
+    text-decoration: none;
+    color: skyblue;
+    font-weight: 800;
+}
+.link {
+    cursor: pointer;
+}
+.signp2 {
+    margin-bottom: 50px;
+}
+
+
+.box1 {
+    width: 58rem;
+    position: relative;
+}
+.box1h1 {
+    color: gold;
+    margin: 35px 0 30px 30px ;
+    font-weight: bold;
+}
+.box1h2, .box1h3 {
+    font-size: 7rem;
+    color: gray;
+    margin: 80px 0 80px 50px;
+}
+.box1poster {
+    position: absolute;
+    top: 200px;
+    margin-left: 90px;
+    display: flex;
+    overflow: scroll;
+    white-space: nowrap;
+    animation: scroll 4s linear infinite;
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+.postbox {
+    flex: 0 0 auto; 
+    scroll-snap-align: start; 
+    margin-right: 18px; 
+    height: 580px;
+    width: 50%;
+}
+.postbox img {
+    display: block; 
+    width: 100%; 
+    height: 580px; 
+}
+.box1poster::-webkit-scrollbar {
+    display: none;
+}
+.box1span1 {
+    position: absolute;
+    bottom: 35px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    padding: 15px 30px 15px 0;
+    margin: 40px 0 0 60PX;
+    border-radius: 50px;
+    background-color: rgb(53, 52, 52);
+}
+.box1span2 {
+    border-radius: 50px;
+    padding: 15px 50px 15px 50px;
+    margin-right: 28px;
+    background-color: lightslategray;
+}
+
+
+.box2 {
+    width: 6rem;
+    background-color: rgba(206, 164, 246, 0.903);
+    display: flex;
+    white-space: nowrap;
+    justify-content: center; 
+    align-items: center;
+}
+.box2 span {
+    font-weight: bold;
+    margin-left: 29px;
+    font-size: 2rem;
+    display: flexbox;
+    transform: rotate(90deg);
+    transform-origin: top ;
+} 
+
+.box3 {
+    width: 36rem;
+    color: white;
+    font-weight: bold;
+}
+.box3h1, .box3p, .box3h3 {
+   margin: 45px 0 40px 30px;
+   width: 300px;
+}
+.box3h2 {
+    font-size: 3rem;
+    margin: 75px 0 15px 30px;
+}
+.box3 i {
+    margin: 10px;
+}
+.box3span {
+    margin-left: 30px;
+    font-weight: bold;
+}
+.box3poster {
+    width: 28rem;
+    height: 200px;
+    margin-left: 50px;
+    display: flex;
+}
+.post1, .post3 {
+    margin-top: 20px;
+    height: 150px;
+    width: 8rem;
+}
+.post1 img , .post3 img{
+    background-size: contain;
+    height: 150px;
+    width: 8rem;
+}
+.post2 {
+    height: 200px;
+    width: 10rem;
+}
+.post2 img {
+    background-size: contain;
+    height: 200px;
+    width: 10rem;
+    border-radius: 10px;
+}
+.post1 img{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.post3 img {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px ;
+}
+.scan {
+    margin: 80px 0 30px 30px;
+    position: relative;
+}
+.scan img {
+    height: 100px;
+    width: 100px;
+    background-size: contain;
+}
+.btn {
+    position: absolute;
+    right: 35px;
+    bottom: 0;
+    padding: 10px 15px 10px 15px;
+    background-color: goldenrod;
+    color: black;
+    border-radius: 50px;
+}
